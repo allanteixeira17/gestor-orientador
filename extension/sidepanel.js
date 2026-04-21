@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingId = 'loading-' + Date.now();
     appendLoading(loadingId);
     
-    fetch('http://127.0.0.1:3000/chat', {
+    fetch('https://gestor-orientador.vercel.app/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question: text })
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => {
       removeLoading(loadingId);
-      appendMessage('ai', '❌ **Erro de conexão**: Verifique se o servidor `node server.js` está rodando.');
+      appendMessage('ai', '❌ **Erro de conexão**: Verifique a conexão com o servidor Vercel.');
       console.error(err);
     });
   }
