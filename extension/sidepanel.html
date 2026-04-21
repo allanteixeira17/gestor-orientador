@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor Orientador Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="sidepanel-mode">
+  <div class="app-container">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo-orb"></div>
+        <div class="brand-text">
+          <h1>Gestor Orientador</h1>
+          <span class="status">Online • Base de Suporte</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="chat-wrapper" class="chat-wrapper">
+      <div id="messages" class="chat-feed">
+        <div class="message-group ai">
+          <div class="avatar">GO</div>
+          <div class="message-bubble">
+            <p>Olá! Sou seu assistente de elite para orientações de suporte.</p>
+            <p>Como posso ajudar você hoje com os procedimentos da <strong>Activesoft</strong>?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="input-container">
+      <div class="input-glass">
+        <textarea id="user-input" placeholder="Pergunte sobre procedimentos..." rows="1"></textarea>
+        <button id="send-btn" title="Enviar pergunta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </footer>
+  </div>
+  <script src="lib/marked.min.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
